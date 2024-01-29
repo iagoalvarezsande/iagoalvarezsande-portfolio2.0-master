@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <div
       className={`fixed w-full h-100 z-[100] bg-[#fafaf7] text-[#4a4a3a] ${
-        scrolled ? "shadow-xl" : ""
+        scrolled ? "shadow" : ""
       }`}
     >
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
