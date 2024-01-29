@@ -1,0 +1,94 @@
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styling for the entire document */
+@layer base {
+  body {
+    /* Set background color, text color, and tracking for body */
+    @apply bg-[#fafaf7] text-[#4a4a3a] tracking-wide;
+  }
+
+  /* Common styling for heading elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  /* Styling for h1 element */
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway];
+  }
+
+  /* Styling for h2 element */
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  /* Styling for list items, making them cursor-pointer */
+  li {
+    @apply cursor-pointer;
+  }
+
+  /* Styling for buttons using Tailwind classes and custom gradient */
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+  }
+}
+
+/* Styling for the html element */
+html {
+  /* Enable smooth scrolling behavior */
+  scroll-behavior: smooth;
+  /* Set the font family for the entire document */
+  font-family: "Raleway", sans-serif;
+}
+
+/* Keyframes animation for horizontal scrolling effect */
+@keyframes horizontal-scroll {
+  0% {
+    transform: translateX(25%);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* Media query for screens with a minimum width of 768px */
+@media (min-width: 768px) {
+  /* Apply horizontal-scroll animation to elements with the class .horizontal-scroll-content */
+  .horizontal-scroll-content {
+    animation: horizontal-scroll 20s linear infinite;
+  }
+}
+
+/* Keyframes animation for cascade effect */
+@keyframes cascade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply cascade animation to elements with the class .animate-cascade */
+.animate-cascade {
+  animation: cascade 0.5s ease-out;
+}
