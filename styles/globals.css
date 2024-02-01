@@ -7,7 +7,7 @@
 @layer base {
   body {
     /* Set background color, text color, and tracking for body */
-    @apply bg-[#191919] text-[#fafaf7] tracking-wide;
+    @apply bg-[#111] text-[#fafaf7] tracking-wide;
   }
 
   /* Common styling for heading elements */

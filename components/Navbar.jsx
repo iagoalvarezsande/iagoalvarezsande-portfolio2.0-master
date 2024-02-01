@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full h-100 z-[100] bg-[#191919] text-gray-600 ${
+      className={`fixed w-full h-100 z-[100] bg-[#111] text-gray-600 ${
         scrolled ? "shadow" : ""
       }`}
     >
@@ -79,7 +79,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] md:w-[60%] sm:w-[45%] h-screen bg-[#191919] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] md:w-[60%] sm:w-[45%] h-screen bg-[#111] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-out duration-500"
           }
         >
