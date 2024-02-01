@@ -63,7 +63,10 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="cursor-pointer md:hidden">
+          <div
+            onClick={handleNav}
+            className="text-gray-200 cursor-pointer md:hidden"
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -76,7 +79,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] md:w-[60%] sm:w-[45%] h-screen bg-[#fafaf7] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] md:w-[60%] sm:w-[45%] h-screen bg-[#191919] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-out duration-500"
           }
         >
@@ -85,7 +88,7 @@ const Navbar = () => {
               <Image src="/Logo.png" alt="logo" width="87" height="35" />
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-[#d1d1c1] cursor-pointer p-3"
+                className="rounded-full text-gray-200 cursor-pointer p-3"
               >
                 <AiOutlineClose />
               </div>
@@ -96,7 +99,7 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div className="py-4 flex flex-col">
+          <div className="py-4 flex flex-col text-gray-200">
             <ul>
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
@@ -124,16 +127,16 @@ const Navbar = () => {
                 Let&apos;s Connect
               </p>
               <div className="flex my-4 items-center justify-between w-full sm:w-[80%]">
-                <div className="relative group p-2 rounded-full shadow-lg shadow-[#d1d1c1] cursor-pointer hover:scale-105 ease-in-duration-300">
+                <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
                   <FaLinkedinIn size={20} />
                 </div>
-                <div className="relative group p-2 rounded-full shadow-lg shadow-[#d1d1c1] cursor-pointer hover:scale-105 ease-in-duration-300">
+                <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
                   <FaGithub size={20} />
                 </div>
-                <div className="relative group p-2 rounded-full shadow-lg shadow-[#d1d1c1] cursor-pointer hover:scale-105 ease-in-duration-300">
+                <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
                   <AiOutlineMail size={20} />
                 </div>
-                <div className="relative group p-2 rounded-full shadow-lg shadow-[#d1d1c1] cursor-pointer hover:scale-105 ease-in-duration-300">
+                <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
                   <BsFillPersonLinesFill size={20} />
                 </div>
               </div>

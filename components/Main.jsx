@@ -26,7 +26,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-600 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full bg-gray-200 bg-opacity-5 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </a>
@@ -35,17 +35,17 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-600 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full  bg-gray-200 bg-opacity-5 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
             </a>
             <Link href="/#contact">
-              <div className="rounded-full shadow-lg shadow-gray-600 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full  bg-gray-200 bg-opacity-5 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
             <Link href="/resume">
-              <div className="rounded-full shadow-lg shadow-gray-600 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full  bg-gray-200 bg-opacity-5 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
             </Link>
