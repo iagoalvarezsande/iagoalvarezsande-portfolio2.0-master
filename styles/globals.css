@@ -7,7 +7,7 @@
 @layer base {
   body {
     /* Set background color, text color, and tracking for body */
-    @apply bg-[#fafaf7] text-[#4a4a3a] tracking-wide;
+    @apply bg-[#191919] text-[#fafaf7] tracking-wide;
   }
 
   /* Common styling for heading elements */
@@ -22,7 +22,7 @@
 
   /* Styling for h1 element */
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway];
+    @apply tracking-tighter text-4xl sm:text-5xl md:text-6xl font-[Raleway];
   }
 
   /* Styling for h2 element */

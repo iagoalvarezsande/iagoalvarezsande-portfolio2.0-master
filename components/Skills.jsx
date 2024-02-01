@@ -1,45 +1,17 @@
 // Importing necessary dependencies and data
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { IoIosArrowDown } from "react-icons/io";
 import { skillsList, images } from "./skills";
 
 // SkillContainer Component
 const SkillContainer = ({ title, description }) => {
-  // State to track the visibility of the description
-  const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
-
-  // Function to toggle the visibility of the description
-  const toggleDescription = () => {
-    setIsDescriptionVisible(!isDescriptionVisible);
-  };
-
   return (
-    <div className="w-full lg:px-4 mb-4 md:mb-0">
-      <div className="p-3 rounded-lg items-center cursor-pointer">
-        {/* Title and arrow icon for toggling the description visibility */}
-        <div className="flex items-center" onClick={toggleDescription}>
-          <h3
-            className={`px-2 text-xl font-semibold transition-all ${
-              isDescriptionVisible ? "text-blue-500 mb-2" : ""
-            }`}
-          >
-            {title}
-          </h3>
-          <IoIosArrowDown
-            className={`text-xl transition-all transform ${
-              isDescriptionVisible ? "rotate-180" : "rotate-0"
-            }`}
-          />
-        </div>
-        {/* Description with conditional styling based on visibility */}
-        <p
-          className={`px-2 py-1 transition-all duration-700 max-h-0 overflow-hidden justify-evenly ${
-            isDescriptionVisible ? "max-h-screen opacity-100 mb-2" : "opacity-0"
-          }`}
-        >
-          {description}
-        </p>
+    <div className="lg:px-4 mb-4 md:mb-0">
+      <div className="p-3 rounded-lg">
+        {/* Title */}
+        <h3 className="px-2 text-xl font-semibold">{title}</h3>
+        {/* Description */}
+        <ul className="px-2 py-1">{description}</ul>
       </div>
     </div>
   );
@@ -52,10 +24,7 @@ const SkillCard = ({ skill, onClick }) => (
     onClick={onClick}
   >
     {/* Image representing the skill */}
-    <div
-      className="m-auto md:grayscale hover:grayscale-0"
-      style={{ cursor: "pointer" }}
-    >
+    <div className="m-auto" style={{ cursor: "pointer" }}>
       <Image src={images[skill.img]} width="64" height="64" alt={skill.name} />
     </div>
     {/* Skill name */}
@@ -112,14 +81,12 @@ const Skills = () => {
   };
 
   return (
-    <div id="skills" className="px-10 w-full lg:h-screen pt-32">
+    <div id="skills" className="px-10 w-full py-16">
       {/* Main container for skills section */}
       <div className=" md:px-40 max-w-[1240px] m-auto md:flex flex-col gap-8">
         <div className="flex-col">
           {/* Section heading for skills */}
-          <p className="uppercase text-xl tracking-widest text-[#6b6b57]">
-            Skills
-          </p>
+          <p className="uppercase text-xl tracking-widest">Skills</p>
           <h2 className="py-4">What I Can Do</h2>
           {/* Horizontal scrollable container for skill cards */}
           <div className="overflow-hidden">
@@ -137,20 +104,40 @@ const Skills = () => {
           {/* Render SelectedSkillInfo component if a skill is selected */}
           {selectedSkill && <SelectedSkillInfo selectedSkill={selectedSkill} />}
         </div>
-        <div className="flex flex-col">
+        <div className="md:grid grid-cols-2 ">
           {/* SkillContainer components for displaying detailed skill descriptions */}
           <SkillContainer
             title="Project Management"
-            description="Orchestration of end-to-end solutions, meticulous strategic roadmap planning, and the seamless execution of dynamic workshops. 
-            Proficient in Agile frameworks and Scrum methodologies, I ensure the delivery of projects that are both efficient and adaptive to evolving requirements."
+            description={
+              <ul className="ml-4 items-center text-xs text-gray-300 list-disc space-y-1">
+                <li>End-to-end solution orchestration</li>
+                <li>Meticulous strategic roadmap planning</li>
+                <li>Proficient in Agile and Scrum</li>
+                <li>Efficient and adaptive project delivery</li>
+              </ul>
+            }
           />
           <SkillContainer
             title="Pharmaceutical Industry"
-            description="With a nuanced understanding of intricate business processes, specialized knowledge in clinical trials regulatory processes, and a comprehensive grasp of quality and manufacturing intricacies, I am adept at implementing cutting-edge SaaS applications tailored precisely to sophisticated processes."
+            description={
+              <ul className="ml-4 text-xs text-gray-300 list-disc space-y-1">
+                <li>Clinical Trials Management and Clinical Data</li>
+                <li>Quality Management and Safety</li>
+                <li>Regulatory Process and Product Registration</li>
+                <li>Medical Content and Customer Engagement</li>
+              </ul>
+            }
           />
           <SkillContainer
-            title="Coding"
-            description="With a foundational grasp of Python and JavaScript, I leverage coding skills to enhance data analysis, automate processes, and contribute to projects in laboratory research and data migration. I also enjoy doing some design with CSS for landing pages."
+            title="Code"
+            description={
+              <ul className="ml-4 text-xs text-gray-300 list-disc space-y-1">
+                <li>Python </li>
+                <li>HTML and CSS</li>
+                <li>Foundations of JavaScript (React)</li>
+                <li>SQL</li>
+              </ul>
+            }
           />
         </div>
       </div>

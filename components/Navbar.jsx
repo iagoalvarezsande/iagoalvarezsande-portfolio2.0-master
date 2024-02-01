@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full h-100 z-[100] bg-[#fafaf7] text-[#4a4a3a] ${
+      className={`fixed w-full h-100 z-[100] bg-[#191919] text-gray-600 ${
         scrolled ? "shadow" : ""
       }`}
     >
@@ -41,24 +41,24 @@ const Navbar = () => {
           height="10"
         />
         <div>
-          <ul className="hidden md:flex text-[#6b6b57]">
+          <ul className="hidden md:flex text-gray-200">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b text-[#6b6b57]">
+              <li className="ml-10 text-sm uppercase hover:border-b text-gray-200">
                 HOME
               </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b text-[#6b6b57]">
+              <li className="ml-10 text-sm uppercase hover:border-b text-gray-200">
                 About
               </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b text-[#6b6b57]">
+              <li className="ml-10 text-sm uppercase hover:border-b text-gray-200">
                 Skills
               </li>
             </Link>
             <Link href="/#books">
-              <li className="ml-10 text-sm uppercase hover:border-b text-[#6b6b57]">
+              <li className="ml-10 text-sm uppercase hover:border-b text-gray-200">
                 Books
               </li>
             </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-[#d1d1c1] my-2">
-              <p className="w-[85%] md:w-[90%] mb-1 text-[#6b6b57]">
+              <p className="w-[85%] md:w-[90%] mb-1 text-gray-200">
                 Let&apos;s Do Great Things Together
               </p>
             </div>
@@ -113,14 +113,14 @@ const Navbar = () => {
                   Skills
                 </li>
               </Link>
-              <Link href="/#Books">
+              <Link href="/#books">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Books
                 </li>
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="items-left uppercase tracking-widest text-[#6b6b57]">
+              <p className="items-left uppercase tracking-widest text-gray-200">
                 Let&apos;s Connect
               </p>
               <div className="flex my-4 items-center justify-between w-full sm:w-[80%]">

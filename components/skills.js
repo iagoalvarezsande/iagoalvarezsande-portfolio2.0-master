@@ -15,8 +15,7 @@ export const skillsList = [
     id: 2,
     name: "AWS",
     img: "aws",
-    description:
-      "Design and implement scalable and secure cloud solutions on Amazon Web Services (AWS) platform.",
+    description: "AWS Solution Architect - Associate.",
     description2:
       "Experience in architecting solutions that meet specific business requirements, ensuring high performance, reliability, and cost-effectiveness.",
     width: "64",
