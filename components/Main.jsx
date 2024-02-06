@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { SiHashnode } from "react-icons/si";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
@@ -39,14 +38,9 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href="/#contact">
+            <Link href="https://iagoas.hashnode.dev/">
               <div className="rounded-full  bg-gray-200 bg-opacity-5 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail />
-              </div>
-            </Link>
-            <Link href="/resume">
-              <div className="rounded-full  bg-gray-200 bg-opacity-5 p-6 m-2 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
+                <SiHashnode />
               </div>
             </Link>
           </div>

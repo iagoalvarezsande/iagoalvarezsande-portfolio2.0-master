@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { SiHashnode } from "react-icons/si";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
   const handleNav = () => {
     setNav(!nav);
   };
@@ -133,12 +132,11 @@ const Navbar = () => {
                 <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
                   <FaGithub size={20} />
                 </div>
-                <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
-                  <AiOutlineMail size={20} />
-                </div>
-                <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
-                  <BsFillPersonLinesFill size={20} />
-                </div>
+                <Link href="https://iagoas.hashnode.dev">
+                  <div className="relative group p-2 rounded-full  cursor-pointer hover:scale-105 ease-in-duration-300">
+                    <SiHashnode size={20} />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
