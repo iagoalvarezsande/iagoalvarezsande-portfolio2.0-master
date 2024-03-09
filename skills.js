@@ -15,7 +15,7 @@ export const skillsList = [
     id: 2,
     name: "AWS",
     img: "aws",
-    description: "AWS Solution Architect - Associate.",
+    description: "AWS Certified Solution Architect.",
     description2:
       "Experience in architecting solutions that meet specific business requirements, ensuring high performance, reliability, and cost-effectiveness.",
     certURL:
