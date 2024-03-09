@@ -5,8 +5,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="home" className=" bordr h-screen text-center">
-      <div className="max-w-[1240px]  h-full p-2 flex flex-col justify-center items-center">
+    <div id="home" className="h-screen text-center">
+      <div className="max-w-[1240px]  h-full p-2 flex flex-col justify-center items-center mx-auto">
         <div>
           <p className="uppercase text-sm tracking-widest  hover:">
             LET&apos;S DO SOMETHING TOGETHER
