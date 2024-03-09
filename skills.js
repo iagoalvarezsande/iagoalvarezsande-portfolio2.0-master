@@ -18,7 +18,8 @@ export const skillsList = [
     description: "AWS Solution Architect - Associate.",
     description2:
       "Experience in architecting solutions that meet specific business requirements, ensuring high performance, reliability, and cost-effectiveness.",
-    certURL: "https://google.com",
+    certURL:
+      "https://www.credly.com/badges/4671459f-eacb-4760-a0ff-bb8fd067c541/linked_in?t=s9vgvj",
     width: "64",
     color: "#FF5733",
   },
