@@ -15,10 +15,12 @@ export const skillsList = [
     id: 2,
     name: "AWS",
     img: "aws",
-    description: "AWS Solution Architect - Associate.",
+    description: "AWS Certified Solution Architect",
+    certicationUrl:
+      "https://www.credly.com/badges/4671459f-eacb-4760-a0ff-bb8fd067c541/linked_in?t=s9vgvj",
     description2:
       "Experience in architecting solutions that meet specific business requirements, ensuring high performance, reliability, and cost-effectiveness.",
-    width: "64",
+    width: "86",
     color: "#FF5733",
   },
   {

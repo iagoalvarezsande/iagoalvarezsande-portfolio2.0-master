@@ -104,39 +104,42 @@ const Skills = () => {
           {/* Render SelectedSkillInfo component if a skill is selected */}
           {selectedSkill && <SelectedSkillInfo selectedSkill={selectedSkill} />}
         </div>
-        <div className="md:grid grid-cols-2 ">
+        <div className="md:flex items-center justify-center ">
           {/* SkillContainer components for displaying detailed skill descriptions */}
           <SkillContainer
             title="Project Management"
             description={
-              <ul className="ml-4 items-center text-xs text-gray-300 list-disc space-y-1">
-                <li>End-to-end solution orchestration</li>
-                <li>Meticulous strategic roadmap planning</li>
-                <li>Proficient in Agile and Scrum</li>
-                <li>Efficient and adaptive project delivery</li>
-              </ul>
+              ""
+              // <ul className="items-center text-xs text-gray-300 list-none space-y-1">
+              //   <li>End-to-end solution orchestration</li>
+              //   <li>Meticulous strategic roadmap planning</li>
+              //   <li>Proficient in Agile and Scrum</li>
+              //   <li>Efficient and adaptive project delivery</li>
+              // </ul>
             }
           />
           <SkillContainer
             title="Pharmaceutical Industry"
             description={
-              <ul className="ml-4 text-xs text-gray-300 list-disc space-y-1">
-                <li>Clinical Trials Management and Clinical Data</li>
-                <li>Quality Management and Safety</li>
-                <li>Regulatory Process and Product Registration</li>
-                <li>Medical Content and Customer Engagement</li>
-              </ul>
+              ""
+              // <ul className="text-xs text-gray-300 list-none space-y-1">
+              //   <li>Clinical Trials Management and Clinical Data</li>
+              //   <li>Quality Management and Safety</li>
+              //   <li>Regulatory Process and Product Registration</li>
+              //   <li>Medical Content and Customer Engagement</li>
+              // </ul>
             }
           />
           <SkillContainer
             title="Code"
             description={
-              <ul className="ml-4 text-xs text-gray-300 list-disc space-y-1">
-                <li>Python </li>
-                <li>HTML and CSS</li>
-                <li>Foundations of JavaScript (React)</li>
-                <li>SQL</li>
-              </ul>
+              " "
+              // <ul className="text-xs text-gray-300 list-none space-y-1">
+              //   <li>Python </li>
+              //   <li>HTML and CSS</li>
+              //   <li>Foundations of JavaScript (React)</li>
+              //   <li>SQL</li>
+              // </ul>
             }
           />
         </div>
