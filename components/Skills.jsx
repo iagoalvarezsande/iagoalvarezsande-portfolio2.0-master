@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { skillsList, images } from "../skills";
+import Link from "next/link";
 
 // SkillContainer Component
 const SkillContainer = ({ title, description }) => {
@@ -50,7 +51,7 @@ const SelectedSkillInfo = ({ selectedSkill }) => {
     >
       {/* Image representing the selected skill */}
       <div className="md:ml-8 mb-4 md:mb-0 w-full md:w-1/4 flex justify-center">
-        <Image src={images[selectedSkill.img]} width="128" height="64" />
+        <Image src={`/skills/${images[selectedSkill.img]}`} width="128" height="64" alt="Skill logo" />
       </div>
       {/* Text content for the selected skill */}
       <div className="px-8 flex flex-col items-center md:items-start">
@@ -59,7 +60,15 @@ const SelectedSkillInfo = ({ selectedSkill }) => {
         </p>
         <div className="flex flex-col items-center md:items-start">
           <p className="py-1 text-center md:text-left">
-            &#8226; {selectedSkill.description}
+            {
+              selectedSkill.certURL ? (
+                <Link href={selectedSkill.certURL} target="_blank" rel="noreferrer" className="underline opacity-80 hover:opacity-100">
+                  &#8226; {selectedSkill.description}
+                </Link>
+              ) : (
+                `&#8226; ${selectedSkill.description}`
+              )
+            }
           </p>
           <p className="py-1 text-center md:text-left">
             &#8226; {selectedSkill.description2}

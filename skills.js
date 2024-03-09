@@ -18,6 +18,7 @@ export const skillsList = [
     description: "AWS Solution Architect - Associate.",
     description2:
       "Experience in architecting solutions that meet specific business requirements, ensuring high performance, reliability, and cost-effectiveness.",
+    certURL: "https://google.com",
     width: "64",
     color: "#FF5733",
   },
