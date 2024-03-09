@@ -15,12 +15,10 @@ export const skillsList = [
     id: 2,
     name: "AWS",
     img: "aws",
-    description: "AWS Certified Solution Architect",
-    certicationUrl:
-      "https://www.credly.com/badges/4671459f-eacb-4760-a0ff-bb8fd067c541/linked_in?t=s9vgvj",
+    description: "AWS Solution Architect - Associate.",
     description2:
       "Experience in architecting solutions that meet specific business requirements, ensuring high performance, reliability, and cost-effectiveness.",
-    width: "86",
+    width: "64",
     color: "#FF5733",
   },
   {
@@ -70,16 +68,16 @@ export const skillsList = [
 ];
 
 export const images = {
-  html: require("../public/skills/html.png"),
-  css: require("../public/skills/css.png"),
-  javascript: require("../public/skills/javascript.png"),
-  react: require("../public/skills/react.png"),
-  tailwind: require("../public/skills/tailwind.png"),
-  github: require("../public/skills/github1.png"),
-  salesforce: require("../public/skills/salesforce.png"),
-  veeva: require("../public/skills/veeva.svg"),
-  jira: require("../public/skills/jira.png"),
-  postman: require("../public/skills/postman.svg"),
-  nextjs: require("../public/skills/nextjs.png"),
-  aws: require("../public/skills/aws.png"),
+  html: "html.png",
+  css: "css.png",
+  javascript: "javascript.png",
+  react: "react.png",
+  tailwind: "tailwind.png",
+  github: "github1.png",
+  salesforce: "salesforce.png",
+  veeva: "veeva.svg",
+  jira: "jira.png",
+  postman: "postman.svg",
+  nextjs: "nextjs.png",
+  aws: "aws.png",
 };

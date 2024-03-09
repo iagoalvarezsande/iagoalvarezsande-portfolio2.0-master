@@ -1,7 +1,7 @@
 // Importing necessary dependencies and data
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { skillsList, images } from "./skills";
+import { skillsList, images } from "../skills";
 
 // SkillContainer Component
 const SkillContainer = ({ title, description }) => {
@@ -25,7 +25,7 @@ const SkillCard = ({ skill, onClick }) => (
   >
     {/* Image representing the skill */}
     <div className="m-auto" style={{ cursor: "pointer" }}>
-      <Image src={images[skill.img]} width="64" height="64" alt={skill.name} />
+      <Image src={`/skills/${images[skill.img]}`} width="64" height="64" alt={skill.name} />
     </div>
     {/* Skill name */}
     <div className="flex flex-col items-center justify-center">
